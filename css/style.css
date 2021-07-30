@@ -1,0 +1,141 @@
+/*font library*/
+@font-face {
+    font-family: "Oduda";
+    src: url(../font/Oduda.otf);
+}
+
+
+@font-face {
+    font-family: "Nanum";
+    src: url(../font/Nanum.ttf);
+}
+
+
+@font-face {
+    font-family: "Nanum_L";
+    src: url(../font/Nanum_L.ttf);
+}
+
+
+@font-face {
+    font-family: "Himnae";
+    src: url(../font/Himnae.ttf);
+}
+
+/*normalizing*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    color: #31456a;
+    background-color: #e3edf7;
+}
+
+/*stylizing - fixed menu*/
+@media all and (max-width:1920px) {
+
+    .menu_btn {
+        zoom: 1;
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        z-index: 99;
+    }
+
+
+    .menu_btn li {
+        background-color: #e3edf7;
+        border-radius: 18px;
+        display: block;
+        min-width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 20px;
+        cursor: pointer;
+        color: rgba(49, 69, 106, 0.35);
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0.0);
+        font-family: 'Oduda';
+    }
+
+    .menu_btn li:hover {
+        color: #31456a;
+    }
+
+    .button.on {
+        color: #31456a;
+        border: 1px solid rgba(0, 0, 0, 0.0);
+        box-shadow: inset 4px 4px 6px -1px rgba(49, 69, 106, 0.2),
+            inset -4px -4px 6px 1px rgba(255, 255, 255, .7),
+            -0.5px -0.5px 0 rgba(255, 255, 255, 1),
+            0.5px 0.5px 0 rgba(0, 0, 0, .15),
+            0px 12px 120px -10px rgba(0, 0, 0, 0.05);
+        animation: clickedIn .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    @keyframes clickedIn {
+        50% {
+            transform: scale(0.98);
+        }
+    }
+
+    /*full page size*/
+    .page_wrap {
+        max-width: 1204px;
+        width: 80%;
+        height: 52%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -60%);
+    }
+
+
+    /*stylizing - title*/
+    /*
+    .stick {
+        position: absolute;
+        left: -70px;
+        top: -120px;
+        width: 100px;
+        height: 1px;
+        background-color: #31456a;
+        transform: rotate(-45deg);
+    }
+*/
+
+    .title {
+        position: absolute;
+        left: -10px;
+        top: -120px;
+        font-family: 'Oduda';
+        font-size: 37px;
+    }
+}
+
+@media all and (max-width:480px) {
+    .menu_btn {
+        zoom: 0.6;
+    }
+}
