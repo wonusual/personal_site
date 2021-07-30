@@ -278,8 +278,8 @@
     .slick-slide {
         opacity: 0;
     }
-    
-     .slick-current {
+
+    .slick-current {
         opacity: 1;
     }
 }
@@ -314,6 +314,7 @@
     .shortcut {
         font-size: 12px;
         position: absolute;
+        left: 0;
         top: 70%;
     }
 
@@ -321,8 +322,5 @@
     .origin {
         margin-top: 274px;
     }
-
-
-
 
 }
