@@ -22,9 +22,8 @@
         line-height: 1.4;
     }
 
-    .name_card p:nth-child(3),
-    .name_card p:nth-child(4) {
-        font-size: 18px;
+    .name_card p {
+        font-size: 21px;
     }
 
     .name_card h1 {
@@ -102,6 +101,7 @@
 
         }
     }
+
 }
 
 @media all and (max-width:600px) {
@@ -120,17 +120,13 @@
     }
 
     .name_card p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .ps {
         display: none;
     }
 
-    .name_card p:nth-child(3),
-    .name_card p:nth-child(4) {
-        font-size: 14px;
-    }
 }
 
 @media all and (max-width:397px) {
@@ -148,12 +144,7 @@
     }
 
     .name_card p {
-        font-size: 10px;
-    }
-
-    .name_card p:nth-child(3),
-    .name_card p:nth-child(4) {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
