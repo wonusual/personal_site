@@ -63,7 +63,7 @@
         font-size: 24px;
         display: inline-block;
         overflow: hidden;
-        animation: typingAni 2s steps(17, end) forwards;
+        animation: typingAni 2s steps(17, end) 1;
     }
 
     .typing_effect:after {
@@ -327,8 +327,8 @@
     .txt_box {
         width: 80%;
     }
-    
-        .explain {
+
+    .explain {
         font-size: 18px;
     }
 
