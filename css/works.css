@@ -258,11 +258,7 @@
 
 @media all and (max-width:768px) {
 
-    #works {
-        background-color: #e3edf7;
-    }
-
-    .container {
+ .container {
         width: 80%;
     }
 
