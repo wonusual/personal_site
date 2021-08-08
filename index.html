@@ -17,6 +17,7 @@
     <script src="./script/scroll_menu.js"></script>
     <script src="./script/percentage.js"></script>
     <script src="./script/slick.js"></script>
+    <script src="./script/svg.js"></script>
 
     <!--   카운트 업-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -64,7 +65,7 @@
                 <li class="button on"><a href="#home"><i class="fas fa-home"></i></a></li>
                 <li class="button"><a href="#aboutMe"><i class="fas fa-address-card"></i></a></li>
                 <li class="button"><a href="#works"><i class="fas fa-folder-open"></i></a></li>
-                <li class="button"><a href="#contact"><i class="fas fa-phone-alt"></i></a></li>
+                <li class="button svg_click"><a href="#contact"><i class="fas fa-phone-alt"></i></a></li>
             </ul>
         </div>
 
@@ -90,8 +91,10 @@
 
             <div id="intro">
                 <div class="page_wrap">
-                    <!--                    <span class="stick"></span>-->
-                    <p class="title">INTRODUCE ME</p>
+
+                    <p class="wow fadeInLeft title">INTRODUCE ME</p>
+
+                    <div class="me"><img src="./images/itsme.png" alt="개인이미지"></div>
 
                     <div class="tab_btn">
                         <ul>
@@ -100,6 +103,7 @@
                             <li><a href="#">LICENSES</a></li>
                         </ul>
                     </div>
+
 
                     <div class="tab_con">
 
@@ -110,13 +114,11 @@
                                 <p class="name">최지원<span>준비된 웹 퍼블리셔 (28)</span></p>
                                 <br>
                                 <p class="typing_effect"><strong>외유내강</strong></p>
-                                <p class="explain">: 겉모습은 부드러우나 속마음은 단단한 심성을 가리키는 표현<br><br>개인적으로 회사가 필요로하는 사람이 되기 위해,<br>
-                                    또한 협력해야하는 일터 안에서 꼭 갖춰야할 마인드라고 생각합니다.<br><br>
-                                    길게 말하지 않겠습니다. 저는 [외유내강형]이라는 말을 자주 들었습니다.<br><br>
-                                    어려운 상황을 마주하더라도 침착함을 유지하면서<br>
-                                    언제나 그랬듯 감사와 인내로 맡겨진 일들을 잘 해낼 자신이 있습니다!<br></p>
+                                <p class="explain"><br>개인적으로 회사가 필요로하는 사람이 되기 위해,<br>
+                                    또한 협력해야하는 일터 안에서 꼭 갖춰야할 마음가짐이라고 생각합니다.<br><br>
+                                    길게 말하지 않겠습니다. <b>저는 [외유내강형]이라는 말을 자주 들었습니다.</b><br><br>
+                                    언제나 그랬듯 감사와 인내로 주어진 업무를 잘 해낼 자신이 있습니다!<br></p>
                             </div>
-                            <div><img src="./images/itsme_o.jpg" alt="인물사진"></div>
                         </div>
 
 
@@ -151,7 +153,7 @@
                         </div>
 
                         <div>
-                            <div class="licenses_wrap">
+                            <div class="wow fadeInUp licenses_wrap">
                                 <p>웹 디자인기능사<span>2021.07.09.</span></p>
                                 <p>GTQ 포토샵 1급<span>2016.03.18.</span></p>
                                 <p>ACA 포토샵<span>2020.10.17.</span></p>
@@ -165,7 +167,7 @@
 
             <div id="works">
                 <div class="page_wrap">
-                    <p class="title">MY WORKS</p>
+                    <p class="wow fadeInLeft title">MY WORKS</p>
                     <div class="container">
                         <div class="rev_slider">
                             <div class="rev_slide">
@@ -178,6 +180,7 @@
                                         <p class="site_name">
                                             1. 리디자인, <span class="shack">SHAKE SHACK</span>
                                         </p>
+                                        <!--
                                         <div class="scroll_box">
                                             <div class="sc_txt">
                                                 [기존 홈페이지가 디자인은 물론 공식 SNS 계정과 비교했을때 정보가 비약하다.] 는 판단 하에
@@ -208,6 +211,7 @@
 
                                             </div>
                                         </div>
+-->
                                         <p class="shortcut color1"><a href="http://cjogo.dothome.co.kr/" target="_blank">Go to about page</a></p>
                                         <p class="origin"><a href="http://www.shakeshack.kr/" target="_blank">compared to<b>original site</b></a></p>
                                     </div>
@@ -216,62 +220,16 @@
                             </div>
 
                             <div class="rev_slide">
-                                <div class="slide_box">
-                                    <div class="slide_box border2">
-                                        <div class="img_wrap">
-                                            <img src="./images/works/tomtom.png" alt="탐앤탐스">
-                                        </div>
-                                        <div class="txt_wrap">
-                                            <p class="site_name">
-                                                2. 모작, <span class="tom">TOM&TOMS</span>
-                                            </p>
-                                            <div class="scroll_box">
-                                                <div class="sc_txt">
-                                                    탐앤탐스를 모작 사이트로 선정한 이유는 웹 강의에서 배운 플러그인, 슬릭 슬라이더를 활용 및 응용하기 위함이었습니다. 특히 탐앤탐스 메인 슬라이드의 좌측하단에 있는 dots 가 slick 에서 기본으로 주어지는 디자인과 달리 커스텀되어있는 것을 보며 방법을 알고 싶다는 호기심에 이끌려 작업을 시작하게 되었습니다.
-                                                    <br><br>
-                                                    탐앤탐스 모작 과정을 통하여 반응형 웹과 슬릭 슬라이더의 기본 개념을 익힐 수 있었으며, 제가 이 분야를 일로 삼더라도 즐겁게 할 수 있으리라는 확신을 가지게 되었던 의미있는 작업이었습니다.
-
-                                                </div>
-                                            </div>
-                                            <p class="shortcut color2"><a href="https://wonusual.github.io/portfolio01/" target="_blank">Go to about page</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rev_slide">
-                                <div class="slide_box border3">
-                                    <div class="img_wrap">
-                                        <img src="./images/works/kia.png" alt="기아">
-                                    </div>
-
-                                    <div class="txt_wrap">
-                                        <p class="site_name">
-                                            3. 모작, <span class="kia">KIA</span>
-                                        </p>
-                                        <div class="scroll_box">
-                                            <div class="sc_txt">
-                                                기아자동차를 모작 사이트로 선정한 이유는
-                                                모바일 웹의 우측하단에 보여지는 카카오톡 상담하기와 같은 animate 기능을 익히고, 메인 슬라이드의 아래에 위치한 BEST-Kia 영역에서 슬라이드가 진행될 때마다 중앙으로 배치되는 슬라이드만이 사이즈가 커지고 투명도가 선명하게 부각되는 방법을 알기 위하여 시작하게 되었습니다.
-                                                <br><br>
-                                                이를 통하여 앞서 배웠던 slick slider 의 기본 개념에서 한층 더 나아가 화면에 두가지 이상의 슬라이드가 보이더라도 '.slick-slide', '.slick-current' , '.slick-active', '.slick-cloned' 라는
-                                                각각의 요소를 소환하여 슬라이드마다 효과를 달리 할 수 있는 방법을 알게 된, 상당히 유익한 작업이었습니다. 또한 흰 스크린 위로 얼마나 무궁무진한 작업들이 이루어질 수 있을까 기대하며 참 즐겁게 임했습니다.
-                                            </div>
-                                        </div>
-                                        <p class="shortcut color3"><a href="https://wonusual.github.io/portfolio02/" target="_blank">Go to about page</a></p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="rev_slide">
-                                <div class="slide_box border4">
+                                <div class="slide_box border2">
                                     <div class="img_wrap">
                                         <img src="./images/works/salty.png" alt="솔티페블">
                                     </div>
 
                                     <div class="txt_wrap">
                                         <p class="site_name">
-                                            4. 모작, <span class="salt">SALTY PEBBLE</span>
+                                            2. 상세페이지 디자인, <span class="salt">SALTY PEBBLE</span>
                                         </p>
+                                        <!--
                                         <div class="scroll_box">
                                             <div class="sc_txt">
                                                 스크롤을 내릴때, 낯선 이벤트가 발생하는 메인 페이지가 저의 시선을 사로잡았습니다.
@@ -283,13 +241,59 @@
                                                 많은 고민과 검색 끝에 자바스크립트를 사용하지 않고 스크롤러라는 라이브러리로 html 내에서만 구현해내는 방법을 알게 되었을땐 그 어떤 해답을 얻었을 때보다 뿌듯했던 기억이 납니다.
                                             </div>
                                         </div>
+-->
                                         <p class="shortcut color4"><a href="https://wonusual.github.io/portfolio03/" target="_blank">Go to about page</a></p>
                                         <p class="origin"><a href="https://www.saltypebble.com/
 " target="_blank">compared to <b>original site</b></a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rev_slide">
+
+                            <div class="rev_slide copy_wrap row">
+                                <div class="slide_box border3">
+                                    <div class="img_wrap">
+                                        <img src="./images/works/tomtom.png" alt="탐앤탐스">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <p class="site_name">
+                                            3. 모작, <span class="tom">TOM&#38;TOMS</span>
+                                        </p>
+                                        <!--
+                                            <div class="scroll_box">
+                                                <div class="sc_txt">
+                                                    탐앤탐스를 모작 사이트로 선정한 이유는 웹 강의에서 배운 플러그인, 슬릭 슬라이더를 활용 및 응용하기 위함이었습니다. 특히 탐앤탐스 메인 슬라이드의 좌측하단에 있는 dots 가 slick 에서 기본으로 주어지는 디자인과 달리 커스텀되어있는 것을 보며 방법을 알고 싶다는 호기심에 이끌려 작업을 시작하게 되었습니다.
+                                                    <br><br>
+                                                    탐앤탐스 모작 과정을 통하여 반응형 웹과 슬릭 슬라이더의 기본 개념을 익힐 수 있었으며, 제가 이 분야를 일로 삼더라도 즐겁게 할 수 있으리라는 확신을 가지게 되었던 의미있는 작업이었습니다.
+
+                                                </div>
+                                            </div>
+-->
+                                        <p class="shortcut color2"><a href="https://wonusual.github.io/portfolio01/" target="_blank">Go to about page</a></p>
+                                    </div>
+                                </div>
+                                <div class="slide_box border4">
+                                    <div class="img_wrap">
+                                        <img src="./images/works/kia.png" alt="기아">
+                                    </div>
+
+                                    <div class="txt_wrap">
+                                        <p class="site_name">
+                                            4. 모작, <span class="kia">KIA</span>
+                                        </p>
+                                        <!--
+                                        <div class="scroll_box">
+                                            <div class="sc_txt">
+                                                기아자동차를 모작 사이트로 선정한 이유는
+                                                모바일 웹의 우측하단에 보여지는 카카오톡 상담하기와 같은 animate 기능을 익히고, 메인 슬라이드의 아래에 위치한 BEST-Kia 영역에서 슬라이드가 진행될 때마다 중앙으로 배치되는 슬라이드만이 사이즈가 커지고 투명도가 선명하게 부각되는 방법을 알기 위하여 시작하게 되었습니다.
+                                                <br><br>
+                                                이를 통하여 앞서 배웠던 slick slider 의 기본 개념에서 한층 더 나아가 화면에 두가지 이상의 슬라이드가 보이더라도 '.slick-slide', '.slick-current' , '.slick-active', '.slick-cloned' 라는
+                                                각각의 요소를 소환하여 슬라이드마다 효과를 달리 할 수 있는 방법을 알게 된, 상당히 유익한 작업이었습니다. 또한 흰 스크린 위로 얼마나 무궁무진한 작업들이 이루어질 수 있을까 기대하며 참 즐겁게 임했습니다.
+                                            </div>
+                                        </div>
+-->
+                                        <p class="shortcut color3"><a href="https://wonusual.github.io/portfolio02/" target="_blank">Go to about page</a></p>
+                                    </div>
+                                </div>
                                 <div class="slide_box">
                                     <div class="img_wrap">
                                         <img src="./images/works/muju.png" alt="무주군">
@@ -298,6 +302,7 @@
                                         <p class="site_name">
                                             5. 모작, <span class="muju">무주군청</span>
                                         </p>
+                                        <!--
                                         <div class="scroll_box">
                                             <div class="sc_txt">
                                                 정보 양이 많은 관공서 작업을 꼭 해보고 싶어 욕심을 내서 무주군청을 마지막 모작 사이트로 선정하여 진행하였습니다.
@@ -311,6 +316,7 @@
                                                 따라서 무주군청을 모작할때는 이전의 작업들을 통하여 익숙해진 방법을 내려놓고 slick slider 가 아닌 swiper 로 슬라이더를 작업하였으며 주로 사용했던 min-whidth 를 대신하여 max-width 를 기준으로 반응형을 잡았습니다.
                                             </div>
                                         </div>
+-->
                                         <p class="shortcut color5"><a href="http://cjogo.dothome.co.kr/html/" target="_blank">Go to about page</a></p>
                                     </div>
                                 </div>
@@ -322,9 +328,8 @@
             </div>
             <div id="contact">
                 <div class="page_wrap">
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                    <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0" viewBox="0 0 374 111" enable-background="new 0 0 374 111" xml:space="preserve">
+
+                    <svg version="1.1" id="svg_wrap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0" viewBox="0 0 374 111" enable-background="new 0 0 374 111" xml:space="preserve">
                         <g>
                             <path class="ani_txt" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M35,26.5v44.2c0,0.8-0.2,1.5-0.6,2
 		c-0.4,0.6-1.1,0.8-2.1,0.8H32c-0.4,0-0.9-0.1-1.4-0.2c-0.5-0.1-1-0.3-1.4-0.6c-0.4-0.3-0.8-0.6-1.1-1c-0.3-0.4-0.4-0.8-0.4-1.3

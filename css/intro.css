@@ -1,6 +1,7 @@
 .actived_tab {
     color: #fff;
     background-color: #31456a;
+    transition: 0.5s;
 }
 
 
@@ -8,14 +9,16 @@
     #intro {
         width: 100%;
         height: 100vh;
+        font-family: "Nanum_L";
         position: relative;
     }
+
 
     .tab_btn {
         width: 50%;
         position: absolute;
-        left: 0;
-        top: -41px;
+        left: 270px;
+        top: -120px;
     }
 
     .tab_btn ul {
@@ -24,43 +27,21 @@
 
     .tab_btn li {
         width: 100%;
-        height: 40px;
         font-size: 2.3vmin;
         line-height: 40px;
         text-align: center;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border: 1px solid #31456a;
-        margin-right: -1px;
+        border-bottom: 1px solid #31456a;
     }
-
-
-    .page_wrap .tab_con {
-        color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        background-color: #fff;
-        border: 1px solid #31456a;
-        border-radius: 0 50px 50px 50px;
-        overflow: hidden;
-    }
-
-
 
 
     /*basic info*/
 
 
-
-
     .txt_box {
-        width: 80%;
+        width: 420px;
         position: absolute;
-        left: 50px;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 100px;
+        top: 60px;
     }
 
     .name {
@@ -75,10 +56,10 @@
     }
 
     .typing_effect {
-        height: 30px;
+        margin-top: 12px;
+        height: 28px;
         letter-spacing: 5px;
         position: relative;
-        font-family: 'Himnae';
         font-size: 24px;
         display: inline-block;
         overflow: hidden;
@@ -121,53 +102,29 @@
     }
 
     .explain {
-        font-family: 'Himnae';
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 1.2px;
     }
 
-    .tab_con > div:nth-child(1) > div:last-child {
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 670px;
-        transform: translateY(-50%);
-    }
-
-    .tab_con > div:nth-child(1) > div:last-child img {
-        height: 100%;
-    }
-
-
-
-
 
     /*skills*/
 
 
-
-
     .skills_wrap {
-        width: 90%;
+        width: 520px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        right: 60px;
+        top: 100px;
     }
 
     .skills_wrap > div {
-        width: 50%;
+        width: 100%;
         display: flex;
         padding: 10px;
         box-sizing: border-box;
-    }
-
-    .skills_wrap > div:nth-child(3),
-    .skills_wrap > div:nth-child(4) {
-        margin-top: 70px;
     }
 
     .skills_wrap > div img {
@@ -212,7 +169,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: #ffe42d;
+        background-color: #f3e9bb;
         animation: percent 2s 1;
     }
 
@@ -232,7 +189,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: #ffe42d;
+        background-color: #f3e9bb;
         animation: last_percent 2s 1;
     }
 
@@ -266,19 +223,16 @@
 
 
 
-
     /*licenses*/
 
 
-
     .licenses_wrap {
-        width: 80%;
+        width: 520px;
         height: auto;
         font-family: 'Nanum';
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        right: -100px;
+        top: 100px;
     }
 
     .licenses_wrap > p {
@@ -293,7 +247,7 @@
         content: "";
         width: 8px;
         height: 8px;
-        background-color: black;
+        background-color: #31456a;
         position: absolute;
         left: -20px;
         top: 50%;
@@ -305,101 +259,117 @@
         font-size: 14px;
         margin-left: 10px;
     }
+
+    .me {
+        z-index: -1;
+    }
 }
 
-@media all and (max-width:860px) {
-    .page_wrap .tab_con {
-        width: 90%;
+
+
+@media all and (max-width:1024px) {
+    .me {
+        width: 270px;
+        position: absolute;
+        right: 50px;
     }
 
-    .name {
-        font-size: 25px;
-    }
-
-    .name span {
-        font-size: 15px;
-        margin-left: 5px;
-    }
-
-    .typing_effect {
-        height: 27px;
-        font-size: 23px;
-    }
-
-
-    .explain {
-        font-size: 19px;
-        line-height: 1;
-        letter-spacing: 0;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-
-    .skills_wrap {
-        flex-flow: column;
-    }
-
-    .skills_wrap > div {
+    .me img {
         width: 100%;
     }
 
-    .skills_wrap > div:nth-child(3),
-    .skills_wrap > div:nth-child(4) {
-        margin-top: 0;
+    .txt_box {
+        left: 20px;
     }
+
+    .skills_wrap {
+        left: 0;
+    }
+
+    .licenses_wrap {
+        left: 50px;
+    }
+
 }
 
 @media all and (max-width:768px) {
-    .txt_box {
-        left: 30px;
-        top: 30px;
-        transform: translateY(0);
+    .tab_btn {
+        left: 0;
+        top: -40px;
+        transition: 0.5s;
     }
 
+    .tab_con {
+        width: 92%;
+        height: 420px;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: 1s;
+        z-index: 99999;
+    }
+
+    .statistic {
+        position: absolute;
+        right: 80px;
+    }
 }
 
 @media all and (max-width:650px) {
-    .tab_btn li:first-child span {
-        display: none;
-    }
-}
-
-@media all and (max-width:568px) {
-    .explain {
-        font-size: 17px;
-    }
-}
-
-@media all and (max-width:500px) {
-    .tab_btn {
-        top: -31px;
+    .me {
+        width: 190px;
+        transition: 0.5s;
     }
 
-    .tab_btn li {
-        height: 30px;
-        line-height: 30px;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
+    .txt_box {
+        left: 20px;
     }
 
-    .name {
-        font-size: 20px;
-    }
 
-    .name span {
-        font-size: 10px;
-        margin-left: 5px;
+    .txt_box {
+        width: 80%;
     }
-
-    .typing_effect {
-        height: 22px;
+    
+        .explain {
         font-size: 18px;
     }
 
+    .percentage_box {
+        width: 280px;
+        transition: 0.5s;
+    }
+
+    .statistic {
+        right: 200px;
+        transition: 0.5s;
+    }
+}
+
+
+@media all and (max-width:480px) {
+    .tab_btn {
+        width: 62%;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .name span {
+        font-size: 12px;
+    }
+
+
+    .typing_effect {
+        height: 20px;
+        font-size: 18px;
+    }
 
     .explain {
-        font-size: 14px;
-        padding-right: 30px;
+        font-size: 15px;
+    }
+
+
+    .skills_wrap {
+        left: -7px;
     }
 
     .skills_wrap > div img {
@@ -408,6 +378,7 @@
     }
 
     .percentage_box {
+        width: 170px;
         height: 12px;
     }
 
@@ -428,10 +399,15 @@
     }
 
     .statistic {
+        position: relative;
+        right: 0;
         margin: 12px 0 0 4px;
         font-size: 10px;
     }
 
+    .licenses_wrap {
+        left: 40px;
+    }
 
     .licenses_wrap > p {
         font-size: 15px;
@@ -440,18 +416,4 @@
     .licenses_wrap span {
         font-size: 8px;
     }
-}
-
-@media all and (max-width:334px) {
-    .licenses_wrap span {
-        display: none;
-    }
-}
-
-@media all and (max-height:630px) {
-    .txt_box {
-        height: 240px;
-        overflow-y: scroll;
-    }
-
 }

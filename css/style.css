@@ -39,6 +39,12 @@ a {
     text-decoration: none;
 }
 
+.row:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -48,7 +54,6 @@ body {
 
 /*stylizing - fixed menu*/
 @media all and (max-width:1920px) {
-
     .menu_btn {
         zoom: 1;
         position: fixed;
@@ -61,8 +66,7 @@ body {
 
 
     .menu_btn li {
-        background-color: #e3edf7;
-        border-radius: 18px;
+        border-radius: 50%;
         display: block;
         min-width: 50px;
         height: 50px;
@@ -113,17 +117,6 @@ body {
 
 
     /*stylizing - title*/
-    /*
-    .stick {
-        position: absolute;
-        left: -70px;
-        top: -120px;
-        width: 100px;
-        height: 1px;
-        background-color: #31456a;
-        transform: rotate(-45deg);
-    }
-*/
 
     .title {
         position: absolute;
@@ -137,5 +130,9 @@ body {
 @media all and (max-width:480px) {
     .menu_btn {
         zoom: 0.6;
+    }
+    
+      .title {
+        font-size: 27px;
     }
 }
