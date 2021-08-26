@@ -163,14 +163,14 @@
         border-bottom: 1px solid black;
     }
 
-    .percent {
-        width: 70%;
+      .percent_75 {
+        width: 75%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
         background-color: #f3e9bb;
-        animation: percent 2s 1;
+        animation: percent 2.5s 1;
     }
 
     @keyframes percent {
@@ -179,18 +179,38 @@
         }
 
         to {
-            width: 70%;
+            width: 75%;
         }
     }
-
-    .percent_60 {
-        width: 50%;
+    
+    .percent {
+        width: 80%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
         background-color: #f3e9bb;
-        animation: last_percent 2s 1;
+        animation: percent 3s 1;
+    }
+
+    @keyframes percent {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 80%;
+        }
+    }
+
+    .percent_70 {
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #f3e9bb;
+        animation: last_percent 1.5s 1;
     }
 
     @keyframes last_percent {
@@ -199,7 +219,7 @@
         }
 
         to {
-            width: 50%;
+            width: 70%;
         }
     }
 
